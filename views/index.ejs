@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>RoClans</title>
+		<link rel="icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
+
+		<link rel="stylesheet" href="/css/style.css" type="text/css">
+		<script data-ad-client="ca-pub-8697387982084464" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	</head>
+	<body>
+		<header>
+			<%- include('templates/header') %>
+		</header>
+			<%- include('templates/announcement') %>
+		<form>
+			<br><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by fort, clan, or category...">
+		</form><br>
+		<section id="placeList">
+			<div class="placeListBackground" id="placeListGet">
+			 <ul id="placeCells">
+				<% placeData.forEach(function(placeData) { %>
+					<div class="placeContainer <%= placeData.category %>" class><a href = "https://www.roblox.com/games/<%= placeData.placeid %>/-"><img src= "<%= placeData.placeicon %>" alt="<%= placeData.placename %>" align="left" width="178" height="100"><span><%= placeData.placename %></span><p><%= placeData.clan %></p><p>Playing: <%= placeData.playing %></p><p class="sCategory"><%= placeData.category %></p></a></div>
+				<% }); %>
+			 </ul>
+			</div>
+		</section>
+		<p class="refresh">Please refresh the page. We apologize for the inconvenience.</p><br><br>
+		<p class="refresh">If refreshing does not work, the website is likely under maintenance.</p>
+		<br><footer><a href = "https://discord.gg/fMb5y7T"> Contact us: https://discord.gg/fMb5y7T</a></footer>
+	</body>
+	<% include templates/search.ejs %>
+</html>

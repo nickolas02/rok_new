@@ -1,0 +1,64 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\mm\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\AdoptOpenJDK\jdk-8.0.282.8-hotspot\bin;C:\Program Files\OpenJDK\jre-8.0.262.10-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Bulk Extractor 1.6.0-dev;C:\Program Files (x86)\Bulk Extractor 1.6.0-dev\python;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Print Conductor;C:\Program Files\Git\cmd;C:\Users\mm\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\mm\AppData\Local\Programs\Python\Python39\;C:\Users\mm\AppData\Local\Microsoft\WindowsApps;C:\Users\mm\AppData\Roaming\npm;C:\Users\mm\AppData\Local\atom\bin;C:\Users\mm\.dotnet\tools;C:\Users\mm\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mm\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  14.15.4
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\mm\brains\psychic-code\package.json: Unexpected token ] in JSON at position 337
+      at JSON.parse (<anonymous>)
+      at C:\Users\mm\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\mm\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\mm\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "example-create-react-app-express",
+    "version": "1.0.0",
+    "scripts": {
+      "client": "cd client && yarn start",
+      "server": "nodemon server.js",
+      "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    },
+    "repository": {
+      "type": "git",
+      "url": "gitr"
+    },
+    "keywords": [
+      "start",
+    ],
+    "author": "Lametta",
+    "license": "UNLICENSED",
+    "dependencies": {
+      "axios": "^0.19.0",
+      "body-parser": "^1.19.0",
+      "cheerio": "^1.0.0-rc.3",
+      "ejs": "^2.6.2",
+      "express": "^4.17.1",
+      "mongodb": "^3.3.0",
+      "mongoose": "^5.6.9",
+      "mysql": "^2.17.1",
+      "node-fetch": "^2.6.0",
+      "request": "^2.88.0"
+    },
+    "devDependencies": {
+      "dotenv": "^8.0.0",
+      "concurrently": "^4.0.01"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
